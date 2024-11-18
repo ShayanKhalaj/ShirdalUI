@@ -1,0 +1,61 @@
+@import "../colors/_colors.scss";
+@import "./typoes-variables.scss";
+
+.text {
+  font-size: 14px;
+  color: $dark-color;
+}
+
+$color-map-keys: map-keys($colors-map);
+
+@each $key in $color-map-keys {
+  $color: map-get($colors-map, $key);
+  .text-#{$key} {
+    @extend .text;
+    color: $color !important;
+  }
+}
+
+@each $item in $font-styles {
+  .text-#{$item} {
+    @extend .text;
+    font-style: $item !important;
+  }
+}
+
+$font-sizes-map-keys: map-keys($font-sizes-map);
+
+@each $key in $font-sizes-map-keys {
+  $size: map-get($font-sizes-map, $key);
+  .text-#{$key} {
+    @extend .text;
+    font-size: $size !important;
+  }
+}
+
+@each $item in $text-aligns {
+    .text-align-#{$item} {
+      @extend .text;
+      text-align: $item !important;
+    }
+  }
+
+
+@each $item in $text-decorations {
+  .text-decoration-#{$item} {
+    @extend .text;
+    text-decoration: $item !important;
+  }
+}
+
+$text-idents-map-keys : map-keys($text-idents-map);
+
+@each $key in $text-idents-map-keys{
+    $ident:map-get($text-idents-map, $key );
+    .text-ident-#{$key}{
+        @extend .text;
+        text-indent: $ident !important;
+    }
+}
+
+  

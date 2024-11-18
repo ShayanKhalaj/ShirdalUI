@@ -1,0 +1,77 @@
+// border-width
+
+@mixin get-border-size($min-width,$max-width){
+    @for $width from $min-width through $max-width{
+        .border-size-#{$width}{
+            border-width: $width !important;
+        }
+    }
+}
+
+// border-style
+
+$border-styles-map:(
+    none:none,
+    solid:solid,
+    dotted:dotted,
+    dashed:dashed,
+    outset:outset,
+    inset:inset,
+    ridge:ridge,
+    groove:groove,
+    double:double,
+    hidden:hidden
+);
+
+@mixin get-border-styles($border-styles-map){
+    $keys : map-keys($border-styles-map);
+    @each $key in $keys{
+        $value : map-get($border-styles-map, $key);
+        .border-#{$key}{
+            border-style: $value !important;
+        }
+    }
+}
+
+// border-colors
+@mixin get-border-colors($colors-map){
+    $keys : map-keys($colors-map);
+    @each $key in $keys{
+        $value : map-get($colors-map, $key);
+        .border-#{$key}{
+            border-color: $value !important;
+            &:default{
+                border-color: $value !important;
+            }
+            &:hover{
+                border-color: darken($value,10%) !important;
+            }
+            &:active{
+                border-color: darken($value, 20%) !important;
+            }
+            &:disabled{
+                border-color: lighten($value,30%) !important;
+            }
+        }
+    }
+}
+
+// border radius
+
+$border-radius-map:(
+    none:0px,
+    hard:2px,
+    medium:4px,
+    light:8px,
+    rounded:10000px
+);
+
+@mixin get-border-radius($border-radius-map){
+    $keys : map-keys($border-radius-map);
+    @each $key in $keys{
+        $value : map-get($border-radius-map, $key);
+        .border-radius-#{$key}{
+            border-radius: $value !important;
+        }
+    }
+}

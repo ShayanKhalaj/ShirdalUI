@@ -1,0 +1,141 @@
+@import '../../layout/colors/colors';
+@import './form-variables.scss';
+
+.form-section,form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: .5rem;
+}
+
+
+.form-label{
+    font-size: 1.4rem;
+    padding: .5rem;
+    color: $dark-color;
+}
+.form-span{
+    font-size: 1.4rem;
+    padding: .5rem;
+    color: $dark-color;
+}
+
+$colors-keys : map-keys($colors-map);
+@each $key in $colors-keys{
+    $value:map-get($colors-map, $key );
+    .form-label-#{$key}{
+        color: $value !important;
+    }
+    .form-span-#{$key}{
+        color: $value !important;
+    }
+}
+
+.form-input{
+    height: 1.8rem;
+    font-size: 1rem;
+    outline: none;
+    background-color: lighten($light-color, 2%);
+
+    $form-input-width-keys : map-keys($form-input-width-map);
+    @each $key in $form-input-width-keys{
+        $value:map-get($form-input-width-map, $key );
+        &.form-input-#{$key}{
+            width: $value;
+        }
+    }
+
+    $colors-keys : map-keys($colors-map);
+    @each $key in $colors-keys{
+        $value : map-get($colors-map, $key );
+        &.form-input-outline-#{$key}{
+            border:2px solid $value !important;
+            border-radius: .2rem;
+            color: $value;
+            &:focus{
+                // border: none !important;
+                outline: 2.5px solid lighten($value, 20%) !important;
+                border-radius: .2rem;
+                color: darken($value, 20%);
+            }
+        }
+    }
+}
+
+.form-check{
+    width: 1.2rem;
+    height: 1.2rem;
+
+    $colors-keys:map-keys($colors-map);
+    @each $key in $colors-keys{
+        $value:map-get($colors-map, $key);
+        &.form-check-#{$key}{
+            accent-color: $value !important;
+        }
+
+    }
+
+    $sizes-keys: map-keys($form-check-radio-sizes-map );
+    @each $key in $sizes-keys{
+        $value:map-get($form-check-radio-sizes-map , $key );
+        &.form-check-#{$key}{
+            height: $value !important;
+            width: $value !important;
+        }
+    }
+}
+.form-radio{
+    width: 1.2rem;
+    height: 1.2rem;
+
+    $colors-keys:map-keys($colors-map);
+    @each $key in $colors-keys{
+        $value:map-get($colors-map, $key);
+        &.form-radio-#{$key}{
+            accent-color: $value !important;
+        }
+
+    }
+
+    $sizes-keys: map-keys($form-check-radio-sizes-map );
+    @each $key in $sizes-keys{
+        $value:map-get($form-check-radio-sizes-map , $key );
+        &.form-radio-#{$key}{
+            height: $value !important;
+            width: $value !important;
+        }
+    }
+}
+
+.form-textarea{
+    width: 100%;
+    height: auto;
+    font-size: 1rem;
+    outline: none;
+    overflow-x: unset !important;
+    background-color: lighten($light-color, 2%);
+
+    $form-input-width-keys : map-keys($form-input-width-map);
+    @each $key in $form-input-width-keys{
+        $value:map-get($form-input-width-map, $key );
+        &.form-textarea-#{$key}{
+            width: $value;
+        }
+    }
+
+    $colors-keys : map-keys($colors-map);
+    @each $key in $colors-keys{
+        $value : map-get($colors-map, $key );
+        &.form-textarea-outline-#{$key}{
+            border:2px solid $value !important;
+            border-radius: .2rem;
+            color: $value;
+            &:focus{
+                // border: none !important;
+                outline: 2.5px solid lighten($value, 20%) !important;
+                border-radius: .2rem;
+                color: darken($value, 20%);
+            }
+        }
+    }
+}

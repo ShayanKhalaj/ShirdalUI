@@ -1,0 +1,65 @@
+/** darker mode of color = 10% */
+/** darkest mode of color = 20% */
+/** ligter mode of color = 20% */
+/** ligtest mode of color = 80% */
+.sidebar {
+  background-color: #333333;
+  width: 240px;
+  height: 100vh;
+  color: #f7e4db;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease;
+  transform: translateX(0);
+}
+.sidebar-menu {
+  list-style: none;
+  margin-top: 4rem;
+}
+.sidebar-menu li {
+  padding-left: 0.5rem;
+  padding-top: 1rem;
+  margin: 1rem;
+}
+.sidebar-menu li a, .sidebar-menu li span {
+  color: #f7e4db;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+.sidebar-menu li a:hover, .sidebar-menu li span:hover {
+  color: rgb(237.7272727273, 196.7045454545, 177.2727272727);
+}
+.sidebar-menu li a i, .sidebar-menu li span i {
+  color: #f7e4db;
+  padding: 4px;
+}
+.sidebar-toggle {
+  display: flex;
+  flex-direction: column;
+  background-color: #333333;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  position: fixed;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+.sidebar-toggle span {
+  width: 24px;
+  height: 1px;
+  background-color: #f7e4db;
+  margin: 4px 0;
+}
+.sidebar.collapse {
+  transform: translateX(0);
+  width: 80px;
+}
+.sidebar.collapse .sidebar-menu li a span {
+  display: none;
+}
+.sidebar.collapse .sidebar-menu li a i {
+  font-size: 1rem;
+}
+
+/*# sourceMappingURL=sidebars.css.map */

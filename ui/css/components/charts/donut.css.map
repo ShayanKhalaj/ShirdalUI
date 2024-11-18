@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../../../scss/layout/colors/_colors.scss","../../../scss/components/charts/donut.scss"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;ACFA;EACI;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;;AACA;EACI;EACA,QDPE;ECQF;;AAGJ;EACI;EACA,QDPI;ECQJ;EACA;EACA;;AAKR;EACI;EACA;EACA;EACA;EACA;EACA;EACA","file":"donut.css"}

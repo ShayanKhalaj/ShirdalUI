@@ -1,0 +1,107 @@
+/** darker mode of color = 10% */
+/** darkest mode of color = 20% */
+/** ligter mode of color = 20% */
+/** ligtest mode of color = 80% */
+.icon, .icon-border-size-3px, .icon-border-size-2px, .icon-border-size-1px, .icon-border-size-none, .icon-border-radius-rounded, .icon-border-radius-8px, .icon-border-radius-4px, .icon-border-radius-2px, .icon-border-radius-none, .icon-xl, .icon-lg, .icon-md, .icon-sm, .icon-xs, .icon-light-color, .icon-medium-color, .icon-dark-color, .icon-error-color, .icon-warning-color, .icon-success-color, .icon-info-color, .icon-accent-color, .icon-support-color, .icon-brand-color {
+  font-size: 1rem;
+  color: #333333;
+  border: none;
+}
+
+.icon-brand-color {
+  color: #6f2c91 !important;
+}
+
+.icon-support-color {
+  color: #f3c94c !important;
+}
+
+.icon-accent-color {
+  color: #4d9b31 !important;
+}
+
+.icon-info-color {
+  color: #1c3f94 !important;
+}
+
+.icon-success-color {
+  color: #009b77 !important;
+}
+
+.icon-warning-color {
+  color: #d76d25 !important;
+}
+
+.icon-error-color {
+  color: #c72c41 !important;
+}
+
+.icon-dark-color {
+  color: #333333 !important;
+}
+
+.icon-medium-color {
+  color: #8b5b29 !important;
+}
+
+.icon-light-color {
+  color: #f7e4db !important;
+}
+
+.icon-xs {
+  font-size: 1rem !important;
+}
+
+.icon-sm {
+  font-size: 1.5rem !important;
+}
+
+.icon-md {
+  font-size: 2rem !important;
+}
+
+.icon-lg {
+  font-size: 2.5rem !important;
+}
+
+.icon-xl {
+  font-size: 3rem !important;
+}
+
+.icon-border-radius-none {
+  border-radius: none !important;
+}
+
+.icon-border-radius-2px {
+  border-radius: 2px !important;
+}
+
+.icon-border-radius-4px {
+  border-radius: 4px !important;
+}
+
+.icon-border-radius-8px {
+  border-radius: 8px !important;
+}
+
+.icon-border-radius-rounded {
+  border-radius: 1000px !important;
+}
+
+.icon-border-size-none {
+  border: none solid !important;
+}
+
+.icon-border-size-1px {
+  border: 1px solid !important;
+}
+
+.icon-border-size-2px {
+  border: 2px solid !important;
+}
+
+.icon-border-size-3px {
+  border: 3px solid !important;
+}
+
+/*# sourceMappingURL=icons.css.map */

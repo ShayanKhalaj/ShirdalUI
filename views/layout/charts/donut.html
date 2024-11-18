@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../../ui/css/main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="column">
+                <div class="donut-chart">
+                    <svg viewBox="0 0 36 36" class="donut">
+                        <circle class="donut-circle" cx="18" cy="18" r="15"></circle>
+                        <circle class="donut-segment" cx="18" cy="18" r="15" style="stroke-dasharray: 70 30;"></circle>
+                    </svg>
+                    <div class="donut-chart__label">this is donut-chart 70%</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const segment = document.querySelector('.donut-segment')
+        for(let i =0 ; i<10;i++){
+            segment.style = `stroke-dasharray:${40} ${60}`;
+        }
+    </script>
+</body>
+</html>

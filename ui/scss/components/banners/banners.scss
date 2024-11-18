@@ -1,0 +1,71 @@
+@import '../../layout/colors/colors';
+
+.banner{
+    position: relative;
+    &-horizontal{
+        width: 100%;
+    height: 40vh;
+    }
+    &-vertical{
+        width: 40vw;
+    height: 80vw;
+    }
+    &-square{
+        width: 20vw;
+     height: 20vw;
+    }
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+
+    &-image{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+
+    &-content{
+        display: flex;
+        flex-direction: column;
+        text-align: end;
+        padding: 14px;
+        width: 30%;
+        height: 30%;
+        position: absolute;
+        right: 1rem;
+        bottom: 1rem;
+        backdrop-filter: blur(5px);
+    }
+
+    &-title{
+        font-size: 3rem;
+        margin: 0;
+        color: $light-color;
+    }
+
+    &-text{
+        font-size: 1.5rem;
+        margin: 5px;
+        color: $light-color;
+    }
+
+    @media (max-width:768px) {
+        .banner{
+            height: 20vh;
+            &-image{
+                object-fit: content;
+            }
+            &-title{
+                font-size: 2rem;
+            }
+            &-text{
+                font-size: 1rem;
+            }
+        }
+    }
+}

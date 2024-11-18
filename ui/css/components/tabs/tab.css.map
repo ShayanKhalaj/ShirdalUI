@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../../../scss/layout/colors/_colors.scss","../../../scss/components/tabs/tab.scss"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;ACFA;EACI;EACA;;AACA;EACI;;AAEJ;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AACA;EACI;EACA;EACA;;AAEJ;EACI;EACA,ODTE;ECUF;;AAIR;EACI,kBDfM;ECgBN;EACA,ODnBK;ECoBL;;AAGJ;EACI;;AACA;EACI","file":"tab.css"}

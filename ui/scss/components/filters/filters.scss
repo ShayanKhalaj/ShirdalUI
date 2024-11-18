@@ -1,0 +1,131 @@
+@import '../../layout/colors/colors';
+
+.checkbox{
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+
+    input{
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    span{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $light-color;
+        border: $dark-color;
+        border-radius: 0;
+        &::after{
+            content: '';
+            position: absolute;
+            left: 6px;
+            top: 2px;
+            width: 6px;
+            height: 12px;
+            border: solid $light-color;
+            border-width: 0 2px 2px 0;
+            transform: scale(0) rotate(45deg);
+            transition: transform 1s;
+        }
+    }
+    input:checked + span{
+        background-color: $dark-color;
+        &::after{
+            transform: scale(1) rotate(45deg);
+        }
+    }
+
+}
+
+.radio-button{
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 100px;
+
+    input[type="radio"]{
+        display: none;
+
+        & + label{
+            position: relative;
+            padding-left: 2rem;
+            cursor: pointer;
+            font-size: 1rem;
+            color:$dark-color;
+            &:before{
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 50%;
+                width: 1.2rem;
+                height: 1.2rem;
+                border: 2px solid $dark-color;
+                border-radius: 0;
+                background-color: $light-color;
+                transition: all .3s;
+                transform:translateY(-50%)
+            }
+            &::after{
+                content: '';
+                position: absolute;
+                left: .3rem;
+                top: 50%;
+                width: .8rem;
+                height: .8rem;
+                background-color: $dark-color;
+                border-radius: 50%;
+                transition: transform .3s ease;
+                transform: translateY(20%) scale(0);
+            }
+        }
+
+        &:checked + label:after{
+            transform: translateY(-50%) scale(1);
+        }
+    }
+}
+
+.switch{
+    position: relative;
+    width: 3rem;
+    height: 1.5rem;
+    input[type="checkbox"]{
+        display: none;
+        & + label{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 2px solid $dark-color;
+            background-color: darken($accent-color,10%);
+            border-radius: 1rem;
+            cursor: pointer;
+            transition: backgroud-color .3s ease;
+            &:before{
+                content: '';
+                position: absolute;
+                top: .15rem;
+                left: .15rem;
+                height: 1.2rem;
+                width: 1.2rem;
+                background-color: $dark-color;
+                border-radius: 50%;
+                transition: transform .3s ease;
+            }
+
+        }
+        &:checked + label{
+            background-color: lighten($accent-color,10%);
+            &:before{
+                transform: translateX(1.5rem);
+            }
+        }
+    }
+}

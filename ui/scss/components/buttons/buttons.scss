@@ -1,0 +1,64 @@
+@import "../../layout/colors/colors.scss";
+@import "./button-variables.scss";
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  $colors-map-keys: map-keys($colors-map);
+  margin: 4px;
+  @each $color-key in $colors-map-keys {
+    $color-value: map-get($colors-map, $color-key);
+    &.btn-#{$color-key} {
+      @include make-default-button($color-value);
+      &:default {
+        @include make-default-button($color-value);
+      }
+      &:hover {
+        background-color: darken($color-value, 10%);
+      }
+      &:active {
+        background-color: darken($color-value, 20%);
+      }
+      &:disabled {
+        background-color: lighten($color-value, 40%);
+        color: darken($color-value, 40%);
+      }
+    }
+    &.btn-outline-#{$color-key} {
+      @include make-default-outline-button($color-value);
+      &:default {
+        @include make-default-outline-button($color-value);
+      }
+      &:hover {
+        background-color: darken($color-value, 10%);
+        @if (lightness($color-value) > 50%) {
+          color: darken($color-value, 40%);
+        } @else {
+          color: lighten($color-value, 60%);
+        }
+      }
+      &:active {
+        background-color: darken($color-value, 20%);
+      }
+      &:disabled {
+        background-color: lighten($color-value, 60%);
+        color: lighten($color-value, 20%);
+      }
+    }
+
+  }
+
+  $button-scale-keys:map-keys($button-scale-map);
+  @each $key in $button-scale-keys{
+    $value:map-get($button-scale-map,$key);
+    &.btn-#{$key}{
+      @include get-button-sizes($value);
+    }
+  }
+
+}
+
+
+

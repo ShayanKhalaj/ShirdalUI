@@ -1,0 +1,425 @@
+/** darker mode of color = 10% */
+/** darkest mode of color = 20% */
+/** ligter mode of color = 20% */
+/** ligtest mode of color = 80% */
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  margin: 4px;
+}
+.button.btn-brand-color {
+  background-color: #6f2c91;
+  color: white;
+}
+.button.btn-brand-color:default {
+  background-color: #6f2c91;
+  color: white;
+}
+.button.btn-brand-color:hover {
+  background-color: rgb(81.0476190476, 32.126984127, 105.873015873);
+}
+.button.btn-brand-color:active {
+  background-color: rgb(51.0952380952, 20.253968254, 66.746031746);
+}
+.button.btn-brand-color:disabled {
+  background-color: rgb(206.7142857143, 165.2380952381, 227.7619047619);
+  color: black;
+}
+.button.btn-outline-brand-color {
+  background-color: rgb(248.8095238095, 243.4920634921, 251.5079365079);
+  color: #6f2c91;
+}
+.button.btn-outline-brand-color:default {
+  background-color: rgb(248.8095238095, 243.4920634921, 251.5079365079);
+  color: #6f2c91;
+}
+.button.btn-outline-brand-color:hover {
+  background-color: rgb(81.0476190476, 32.126984127, 105.873015873);
+  color: rgb(248.8095238095, 243.4920634921, 251.5079365079);
+}
+.button.btn-outline-brand-color:active {
+  background-color: rgb(51.0952380952, 20.253968254, 66.746031746);
+}
+.button.btn-outline-brand-color:disabled {
+  background-color: rgb(248.8095238095, 243.4920634921, 251.5079365079);
+  color: rgb(164.619047619, 86.9841269841, 204.0158730159);
+}
+.button.btn-support-color {
+  background-color: #f3c94c;
+  color: black;
+}
+.button.btn-support-color:default {
+  background-color: #f3c94c;
+  color: black;
+}
+.button.btn-support-color:hover {
+  background-color: rgb(239.7958115183, 186.5811518325, 28.2041884817);
+}
+.button.btn-support-color:active {
+  background-color: rgb(203.3664921466, 155.6492146597, 13.6335078534);
+}
+.button.btn-support-color:disabled {
+  background-color: white;
+  color: rgb(107.7748691099, 82.4869109948, 7.2251308901);
+}
+.button.btn-outline-support-color {
+  background-color: white;
+  color: rgb(239.7958115183, 186.5811518325, 28.2041884817);
+}
+.button.btn-outline-support-color:default {
+  background-color: white;
+  color: rgb(239.7958115183, 186.5811518325, 28.2041884817);
+}
+.button.btn-outline-support-color:hover {
+  background-color: rgb(239.7958115183, 186.5811518325, 28.2041884817);
+  color: rgb(107.7748691099, 82.4869109948, 7.2251308901);
+}
+.button.btn-outline-support-color:active {
+  background-color: rgb(203.3664921466, 155.6492146597, 13.6335078534);
+}
+.button.btn-outline-support-color:disabled {
+  background-color: white;
+  color: rgb(249.4083769634, 229.8376963351, 171.5916230366);
+}
+.button.btn-accent-color {
+  background-color: #4d9b31;
+  color: white;
+}
+.button.btn-accent-color:default {
+  background-color: #4d9b31;
+  color: white;
+}
+.button.btn-accent-color:hover {
+  background-color: rgb(57.75, 116.25, 36.75);
+}
+.button.btn-accent-color:active {
+  background-color: rgb(38.5, 77.5, 24.5);
+}
+.button.btn-accent-color:disabled {
+  background-color: rgb(191.5, 230.5, 177.5);
+  color: black;
+}
+.button.btn-outline-accent-color {
+  background-color: white;
+  color: #4d9b31;
+}
+.button.btn-outline-accent-color:default {
+  background-color: white;
+  color: #4d9b31;
+}
+.button.btn-outline-accent-color:hover {
+  background-color: rgb(57.75, 116.25, 36.75);
+  color: white;
+}
+.button.btn-outline-accent-color:active {
+  background-color: rgb(38.5, 77.5, 24.5);
+}
+.button.btn-outline-accent-color:disabled {
+  background-color: white;
+  color: #80ce64;
+}
+.button.btn-info-color {
+  background-color: #1c3f94;
+  color: white;
+}
+.button.btn-info-color:default {
+  background-color: #1c3f94;
+  color: white;
+}
+.button.btn-info-color:hover {
+  background-color: rgb(19.8863636364, 44.7443181818, 105.1136363636);
+}
+.button.btn-info-color:active {
+  background-color: rgb(11.7727272727, 26.4886363636, 62.2272727273);
+}
+.button.btn-info-color:disabled {
+  background-color: rgb(145.6818181818, 171.5340909091, 234.3181818182);
+  color: black;
+}
+.button.btn-outline-info-color {
+  background-color: rgb(231.4545454545, 237.0227272727, 250.5454545455);
+  color: #1c3f94;
+}
+.button.btn-outline-info-color:default {
+  background-color: rgb(231.4545454545, 237.0227272727, 250.5454545455);
+  color: #1c3f94;
+}
+.button.btn-outline-info-color:hover {
+  background-color: rgb(19.8863636364, 44.7443181818, 105.1136363636);
+  color: rgb(231.4545454545, 237.0227272727, 250.5454545455);
+}
+.button.btn-outline-info-color:active {
+  background-color: rgb(11.7727272727, 26.4886363636, 62.2272727273);
+}
+.button.btn-outline-info-color:disabled {
+  background-color: rgb(231.4545454545, 237.0227272727, 250.5454545455);
+  color: rgb(59.9090909091, 106.0454545455, 218.0909090909);
+}
+.button.btn-success-color {
+  background-color: #009b77;
+  color: white;
+}
+.button.btn-success-color:default {
+  background-color: #009b77;
+  color: white;
+}
+.button.btn-success-color:hover {
+  background-color: rgb(0, 104, 79.8451612903);
+}
+.button.btn-success-color:active {
+  background-color: rgb(0, 53, 40.6903225806);
+}
+.button.btn-success-color:disabled {
+  background-color: rgb(104, 255, 219.9290322581);
+  color: black;
+}
+.button.btn-outline-success-color {
+  background-color: rgb(206, 255, 243.6193548387);
+  color: #009b77;
+}
+.button.btn-outline-success-color:default {
+  background-color: rgb(206, 255, 243.6193548387);
+  color: #009b77;
+}
+.button.btn-outline-success-color:hover {
+  background-color: rgb(0, 104, 79.8451612903);
+  color: rgb(206, 255, 243.6193548387);
+}
+.button.btn-outline-success-color:active {
+  background-color: rgb(0, 53, 40.6903225806);
+}
+.button.btn-outline-success-color:disabled {
+  background-color: rgb(206, 255, 243.6193548387);
+  color: rgb(2, 255, 196.2387096774);
+}
+.button.btn-warning-color {
+  background-color: #d76d25;
+  color: white;
+}
+.button.btn-warning-color:default {
+  background-color: #d76d25;
+  color: white;
+}
+.button.btn-warning-color:hover {
+  background-color: rgb(171.4880952381, 86.9404761905, 29.5119047619);
+}
+.button.btn-warning-color:active {
+  background-color: rgb(127.9761904762, 64.880952381, 22.0238095238);
+}
+.button.btn-warning-color:disabled {
+  background-color: rgb(247.0714285714, 224.3571428571, 208.9285714286);
+  color: rgb(40.9523809524, 20.7619047619, 7.0476190476);
+}
+.button.btn-outline-warning-color {
+  background-color: white;
+  color: #d76d25;
+}
+.button.btn-outline-warning-color:default {
+  background-color: white;
+  color: #d76d25;
+}
+.button.btn-outline-warning-color:hover {
+  background-color: rgb(171.4880952381, 86.9404761905, 29.5119047619);
+  color: white;
+}
+.button.btn-outline-warning-color:active {
+  background-color: rgb(127.9761904762, 64.880952381, 22.0238095238);
+}
+.button.btn-outline-warning-color:disabled {
+  background-color: white;
+  color: rgb(232.0952380952, 166.4761904762, 121.9047619048);
+}
+.button.btn-error-color {
+  background-color: #c72c41;
+  color: white;
+}
+.button.btn-error-color:default {
+  background-color: #c72c41;
+  color: white;
+}
+.button.btn-error-color:hover {
+  background-color: rgb(157.2345679012, 34.7654320988, 51.3580246914);
+}
+.button.btn-error-color:active {
+  background-color: rgb(115.4691358025, 25.5308641975, 37.7160493827);
+}
+.button.btn-error-color:disabled {
+  background-color: rgb(243.5925925926, 203.4074074074, 208.8518518519);
+  color: rgb(31.9382716049, 7.0617283951, 10.4320987654);
+}
+.button.btn-outline-error-color {
+  background-color: white;
+  color: #c72c41;
+}
+.button.btn-outline-error-color:default {
+  background-color: white;
+  color: #c72c41;
+}
+.button.btn-outline-error-color:hover {
+  background-color: rgb(157.2345679012, 34.7654320988, 51.3580246914);
+  color: white;
+}
+.button.btn-outline-error-color:active {
+  background-color: rgb(115.4691358025, 25.5308641975, 37.7160493827);
+}
+.button.btn-outline-error-color:disabled {
+  background-color: white;
+  color: rgb(225.1234567901, 119.8765432099, 134.1358024691);
+}
+.button.btn-dark-color {
+  background-color: #333333;
+  color: white;
+}
+.button.btn-dark-color:default {
+  background-color: #333333;
+  color: white;
+}
+.button.btn-dark-color:hover {
+  background-color: rgb(25.5, 25.5, 25.5);
+}
+.button.btn-dark-color:active {
+  background-color: black;
+}
+.button.btn-dark-color:disabled {
+  background-color: #999999;
+  color: black;
+}
+.button.btn-outline-dark-color {
+  background-color: #cccccc;
+  color: #333333;
+}
+.button.btn-outline-dark-color:default {
+  background-color: #cccccc;
+  color: #333333;
+}
+.button.btn-outline-dark-color:hover {
+  background-color: rgb(25.5, 25.5, 25.5);
+  color: #cccccc;
+}
+.button.btn-outline-dark-color:active {
+  background-color: black;
+}
+.button.btn-outline-dark-color:disabled {
+  background-color: #cccccc;
+  color: #666666;
+}
+.button.btn-medium-color {
+  background-color: #8b5b29;
+  color: white;
+}
+.button.btn-medium-color:default {
+  background-color: #8b5b29;
+  color: white;
+}
+.button.btn-medium-color:hover {
+  background-color: rgb(99.6166666667, 65.2166666667, 29.3833333333);
+}
+.button.btn-medium-color:active {
+  background-color: rgb(60.2333333333, 39.4333333333, 17.7666666667);
+}
+.button.btn-medium-color:disabled {
+  background-color: rgb(226.3, 192.7, 157.7);
+  color: black;
+}
+.button.btn-outline-medium-color {
+  background-color: rgb(249.5333333333, 243.1333333333, 236.4666666667);
+  color: #8b5b29;
+}
+.button.btn-outline-medium-color:default {
+  background-color: rgb(249.5333333333, 243.1333333333, 236.4666666667);
+  color: #8b5b29;
+}
+.button.btn-outline-medium-color:hover {
+  background-color: rgb(99.6166666667, 65.2166666667, 29.3833333333);
+  color: rgb(249.5333333333, 243.1333333333, 236.4666666667);
+}
+.button.btn-outline-medium-color:active {
+  background-color: rgb(60.2333333333, 39.4333333333, 17.7666666667);
+}
+.button.btn-outline-medium-color:disabled {
+  background-color: rgb(249.5333333333, 243.1333333333, 236.4666666667);
+  color: rgb(203.0666666667, 142.2666666667, 78.9333333333);
+}
+.button.btn-light-color {
+  background-color: #f7e4db;
+  color: rgb(47.4545454545, 22.4090909091, 10.5454545455);
+}
+.button.btn-light-color:default {
+  background-color: #f7e4db;
+  color: rgb(47.4545454545, 22.4090909091, 10.5454545455);
+}
+.button.btn-light-color:hover {
+  background-color: rgb(237.7272727273, 196.7045454545, 177.2727272727);
+}
+.button.btn-light-color:active {
+  background-color: rgb(228.4545454545, 165.4090909091, 135.5454545455);
+}
+.button.btn-light-color:disabled {
+  background-color: white;
+  color: rgb(209.9090909091, 102.8181818182, 52.0909090909);
+}
+.button.btn-outline-light-color {
+  background-color: white;
+  color: rgb(237.7272727273, 196.7045454545, 177.2727272727);
+}
+.button.btn-outline-light-color:default {
+  background-color: white;
+  color: rgb(237.7272727273, 196.7045454545, 177.2727272727);
+}
+.button.btn-outline-light-color:hover {
+  background-color: rgb(237.7272727273, 196.7045454545, 177.2727272727);
+  color: rgb(209.9090909091, 102.8181818182, 52.0909090909);
+}
+.button.btn-outline-light-color:active {
+  background-color: rgb(228.4545454545, 165.4090909091, 135.5454545455);
+}
+.button.btn-outline-light-color:disabled {
+  background-color: white;
+  color: white;
+}
+.button.btn-xxs {
+  width: 80px !important;
+  height: 32px !important;
+  padding: 4px 8px !important;
+  font-size: 12px !important;
+}
+.button.btn-xs {
+  width: 96px !important;
+  height: 40px !important;
+  padding: 8px 10px !important;
+  font-size: 14px !important;
+}
+.button.btn-sm {
+  width: 112px !important;
+  height: 48px !important;
+  padding: 12px 12px !important;
+  font-size: 16px !important;
+}
+.button.btn-md {
+  width: 128px !important;
+  height: 56px !important;
+  padding: 16px 14px !important;
+  font-size: 18px !important;
+}
+.button.btn-lg {
+  width: 144px !important;
+  height: 64px !important;
+  padding: 20px 16px !important;
+  font-size: 20px !important;
+}
+.button.btn-xl {
+  width: 160px !important;
+  height: 72px !important;
+  padding: 24px 18px !important;
+  font-size: 22px !important;
+}
+.button.btn-xxl {
+  width: 176px !important;
+  height: 80px !important;
+  padding: 28px 20px !important;
+  font-size: 24px !important;
+}
+
+/*# sourceMappingURL=buttons.css.map */

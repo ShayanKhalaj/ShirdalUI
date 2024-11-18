@@ -1,0 +1,107 @@
+@import "../../layout/colors/colors";
+
+.navbar {
+  width: 100%;
+  height: 3rem;
+  background-color: $dark-color;
+  color: $light-color;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  &-fixed {
+    position: fixed;
+  }
+  @media (max-width: 768px) {
+    justify-content: space-between;
+  }
+
+  &-logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    @media (max-width: 768px) {
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
+  }
+
+  &-menu {
+    display: flex;
+    list-style: none;
+    .navbar-item {
+      margin-left: 1.5rem;
+      margin-right: 1.5rem;
+      a {
+        text-decoration: none;
+        &:hover {
+          color: darken($light-color, 10%) !important;
+        }
+      }
+    }
+  }
+
+  &-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    background-color: $dark-color;
+    border: none;
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+    span {
+        display: block;
+        width: 24px;
+        height: 1px;
+        background-color: $light-color;
+        margin: 4px 0;
+        transition: .3s;
+      }
+  }
+
+  @media (max-width:768px) {
+    &-menu{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 45px;
+        background-color: $dark-color;
+        width: 100%;
+        border-top: 1px solid $light-color;
+        padding: 1rem;
+        .navbar-item{
+            margin: 1rem 0;
+            text-align: center;
+            //border-bottom: 1px dotted $light-color;
+        }
+    }
+
+    &-toggle{
+        display: flex;
+    }
+
+    &.is-active{
+        .navbar-menu{
+            display: flex;
+        }
+        .navbar-toggle{
+            span:nth-child(1){
+                transform: rotate(45deg) translate(5px, 5px);
+                width: 28px;
+        height: 2px;
+            }
+            span:nth-child(2){
+                opacity: 0;
+            }
+            span:nth-child(3){
+                transform: rotate(-45deg) translate(5px, -10px);
+                width: 28px;
+                height: 2px;
+            }
+        }
+        
+    }
+
+
+  }
+
+
+}

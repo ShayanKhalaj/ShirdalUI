@@ -1,0 +1,11 @@
+{
+  "name": "shirdalui_css_framework",
+  "version": "1.0.0",
+  "description": "This is a CSS Framework.",
+  "main": "index.js",
+  "scripts": {
+    "watch-sass":"sass --watch ui/scss:ui/css"
+  },
+  "author": "Shayan Khalaj",
+  "license": "ISC"
+}

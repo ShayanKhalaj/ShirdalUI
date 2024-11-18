@@ -1,0 +1,68 @@
+/** darker mode of color = 10% */
+/** darkest mode of color = 20% */
+/** ligter mode of color = 20% */
+/** ligtest mode of color = 80% */
+.banner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 1rem;
+  background-color: #333333;
+  width: 100%;
+  border: 1px solid none;
+}
+
+.banner-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  background-color: #333333;
+  opacity: 0.3;
+}
+.banner-image > img {
+  width: 100;
+  height: auto;
+  box-sizing: border-box;
+  object-fit: cover;
+}
+
+.banner-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+}
+.banner-content > h1, .banner-content p {
+  position: absolute;
+  color: #f7e4db;
+}
+.banner-content > h1 {
+  font-size: 4rem;
+  top: 10vh;
+  right: 10vw;
+}
+.banner-content > p {
+  font-size: 2rem;
+  top: 18vh;
+  right: 14vw;
+}
+@media (max-width: 768px) {
+  .banner-content > h1 {
+    font-size: 4rem;
+    top: 4vh;
+    right: 3vw;
+    font-size: 3rem;
+  }
+  .banner-content > p {
+    font-size: 2rem;
+    top: 18vh;
+    right: 4vw;
+    font-size: 1rem;
+  }
+}
+
+/*# sourceMappingURL=banner.css.map */

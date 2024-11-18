@@ -1,0 +1,201 @@
+@use "sass:math";
+
+@import "./grid-variables.scss";
+
+// container-fluid area
+.container-fluid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100% !important;
+  margin: 0 auto;
+  // z-index area
+  position: relative;
+  @for $zindex from 1 through 100 {
+    &.z-index-#{$zindex} {
+      z-index: $zindex;
+    }
+  }
+  // felx-column area
+  &.flex-column {
+    display: flex;
+    flex-direction: column;
+  }
+  // flext-row area
+  &.flex-row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  // break point area
+  @media (max-width: $bp-md) {
+    width: 100% !important;
+  }
+
+  // align items area
+  @each $align in start, center, end, stretch {
+    &.align-#{$align} {
+      align-items: $align;
+    }
+  }
+
+  // justify contents area
+  @each $justify in start, center, end, space-between, space-around,
+    space-evenly
+  {
+    &.justify-#{$justify} {
+      justify-content: $justify;
+    }
+  }
+}
+
+// container area
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: $container-width !important;
+  margin: $gutter auto;
+  margin-top: 0;
+  position: relative;
+  @for $zindex from 1 through 100 {
+    &.z-index-#{$zindex} {
+      z-index: $zindex;
+    }
+  }
+  &.flex-column {
+    display: flex;
+    flex-direction: column;
+  }
+  &.flex-row {
+    display: flex;
+    flex-direction: row;
+  }
+  // break point area
+  @media (max-width: $bp-md) {
+    width: 100% !important;
+  }
+  // align items area
+  @each $align in start, center, end, stretch {
+    &.align-#{$align} {
+      align-items: $align;
+    }
+  }
+
+  // justify contents area
+  @each $justify in start, center, end, space-between, space-around,
+    space-evenly
+  {
+    &.justify-#{$justify} {
+      justify-content: $justify;
+    }
+  }
+}
+
+// row area
+.row {
+  display: flex;
+  flex-wrap: inherit;
+  width: $row-width !important;
+  margin: math.div($gutter, 2) auto;
+  position: relative;
+  @for $zindex from 1 through 100 {
+    &.z-index-#{$zindex} {
+      z-index: $zindex;
+    }
+  }
+  &.flex-column {
+    display: flex;
+    flex-direction: column;
+  }
+  &.flex-row {
+    display: flex;
+    flex-direction: row;
+  }
+  // align items area
+  @each $align in start, center, end, stretch {
+    &.align-#{$align} {
+      align-items: $align;
+    }
+  }
+
+  // justify contents area
+  @each $justify in start, center, end, space-between, space-around,
+    space-evenly
+  {
+    &.justify-#{$justify} {
+      justify-content: $justify;
+    }
+  }
+}
+
+// column area
+.column {
+  flex: 100 100 auto;
+  margin:0 auto;
+  position: relative;
+  // column width
+  @for $column from 1 through $columns {
+    &.column-#{$column} {
+      width: math.div(100%, $column);
+    }
+  }
+  // z-index
+  @for $zindex from 1 through 100 {
+    &.z-index-#{$zindex} {
+      z-index: $zindex;
+    }
+  }
+
+  &.flex-column {
+    display: flex;
+    flex-direction: column;
+  }
+  &.flex-row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  // align items area
+  @each $align in start, center, end, stretch {
+    &.align-#{$align} {
+      align-items: $align;
+    }
+  }
+
+  // justify contents area
+  @each $justify in start, center, end, space-between, space-around,
+    space-evenly
+  {
+    &.justify-#{$justify} {
+      justify-content: $justify;
+    }
+  }
+
+  // break point area
+  @each $point in xxl, xl, lg, md, sm, xs, xxs {
+    $max-width: 0;
+    @if ($point == xxl) {
+      $max-width: $bp-xxl;
+    } @else if($point == xl) {
+      $max-width: $bp-xl;
+    } @else if($point == lg) {
+      $max-width: $bp-lg;
+    } @else if($point == md) {
+      $max-width: $bp-md;
+    } @else if($point == sm) {
+      $max-width: $bp-sm;
+    } @else if($point == xs) {
+      $max-width: $bp-xs;
+    } @else if($point == xxs) {
+      $max-width: $bp-xxs;
+    }
+
+    @media (max-width: $max-width) {
+      @for $col from 1 through $columns {
+        &.column-#{$point}-#{$col} {
+          flex: 0 0 math.div(100%, $columns) * $col;
+          max-width: math.div(100%, $columns) * $col;
+        }
+      }
+    }
+  }
+}

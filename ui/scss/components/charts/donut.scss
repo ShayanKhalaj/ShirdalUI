@@ -1,0 +1,37 @@
+@import '../../layout/colors/colors';
+.donut-chart{
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+
+    .donut{
+        width: 100%;
+        height: 100%;
+        transform: rotate(-90deg);
+        &-circle{
+            fill: none;
+            stroke: $brand-color;
+            stroke-width: 3.5;
+     
+        }
+        &-segment{
+            fill: none;
+            stroke: $warning-color;
+            stroke-width: 3.5;
+            stroke-linecap: round;
+            transition: stroke-dasharray 10s ease;
+      
+        }
+
+    }
+    &__label{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 1.2rem;
+        font-weight: 400;
+        color: $brand-color !important;
+    }
+}

@@ -1,0 +1,48 @@
+@import './icons-variable.scss';
+@import '../colors/colors.scss';
+
+.icon{
+    font-size: 1rem;
+    color: $dark-color;
+    border: none;
+}
+
+$colors-keys : map-keys($colors-map);
+
+@each $key in $colors-keys{
+    $color : map-get($colors-map, $key );
+    .icon-#{$key}{
+        @extend .icon;
+        color: $color !important;
+    }
+};
+
+$sizes-keys : map-keys($icon-size-map);
+
+@each $key in $sizes-keys{
+    $size : map-get($icon-size-map, $key );
+    .icon-#{$key}{
+        @extend .icon;
+        font-size: $size !important;
+    }
+}
+
+$border-radius-keys : map-keys($icon-border-radius-map);
+
+@each $key in $border-radius-keys{
+    $border : map-get($icon-border-radius-map, $key );
+    .icon-border-radius-#{$key}{
+        @extend .icon;
+        border-radius: $border !important;
+    }
+}
+
+$border-size-keys : map-keys($icon-border-size-map);
+
+@each $key in $border-size-keys{
+    $size : map-get($icon-border-size-map, $key );
+    .icon-border-size-#{$key}{
+        @extend .icon;
+        border: $size solid !important;
+    }
+}

@@ -1,0 +1,123 @@
+/** darker mode of color = 10% */
+/** darkest mode of color = 20% */
+/** ligter mode of color = 20% */
+/** ligtest mode of color = 80% */
+.alert {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 3rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  position: relative;
+}
+.alert span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 1.5rem;
+  top: 0.5rem;
+  width: 2rem;
+  height: 2rem;
+  color: #f7e4db !important;
+  background-color: #333333;
+  border-radius: 50%;
+}
+.alert.alert-brand-color {
+  box-shadow: 2px 4px 6px rgb(227.7619047619, 204.3650793651, 239.6349206349);
+  background-color: rgb(185.6666666667, 126.1111111111, 215.8888888889);
+  border: 2px solid rgb(51.0952380952, 20.253968254, 66.746031746);
+}
+.alert.alert-brand-color > * {
+  color: rgb(51.0952380952, 20.253968254, 66.746031746);
+  font-size: 1.2rem;
+}
+.alert.alert-support-color {
+  box-shadow: 2px 4px 6px white;
+  background-color: rgb(252.612565445, 244.2565445026, 219.387434555);
+  border: 2px solid rgb(203.3664921466, 155.6492146597, 13.6335078534);
+}
+.alert.alert-support-color > * {
+  color: rgb(203.3664921466, 155.6492146597, 13.6335078534);
+  font-size: 1.2rem;
+}
+.alert.alert-accent-color {
+  box-shadow: 2px 4px 6px rgb(223.25, 242.75, 216.25);
+  background-color: rgb(159.75, 218.25, 138.75);
+  border: 2px solid rgb(38.5, 77.5, 24.5);
+}
+.alert.alert-accent-color > * {
+  color: rgb(38.5, 77.5, 24.5);
+  font-size: 1.2rem;
+}
+.alert.alert-info-color {
+  box-shadow: 2px 4px 6px rgb(188.5681818182, 204.2784090909, 242.4318181818);
+  background-color: rgb(102.7954545455, 138.7897727273, 226.2045454545);
+  border: 2px solid rgb(11.7727272727, 26.4886363636, 62.2272727273);
+}
+.alert.alert-info-color > * {
+  color: rgb(11.7727272727, 26.4886363636, 62.2272727273);
+  font-size: 1.2rem;
+}
+.alert.alert-success-color {
+  box-shadow: 2px 4px 6px rgb(155, 255, 231.7741935484);
+  background-color: rgb(53, 255, 208.0838709677);
+  border: 2px solid rgb(0, 53, 40.6903225806);
+}
+.alert.alert-success-color > * {
+  color: rgb(0, 53, 40.6903225806);
+  font-size: 1.2rem;
+}
+.alert.alert-warning-color {
+  box-shadow: 2px 4px 6px rgb(254.5595238095, 253.2976190476, 252.4404761905);
+  background-color: rgb(239.5833333333, 195.4166666667, 165.4166666667);
+  border: 2px solid rgb(127.9761904762, 64.880952381, 22.0238095238);
+}
+.alert.alert-warning-color > * {
+  color: rgb(127.9761904762, 64.880952381, 22.0238095238);
+  font-size: 1.2rem;
+}
+.alert.alert-error-color {
+  box-shadow: 2px 4px 6px rgb(252.8271604938, 245.1728395062, 246.2098765432);
+  background-color: rgb(234.3580246914, 161.6419753086, 171.4938271605);
+  border: 2px solid rgb(115.4691358025, 25.5308641975, 37.7160493827);
+}
+.alert.alert-error-color > * {
+  color: rgb(115.4691358025, 25.5308641975, 37.7160493827);
+  font-size: 1.2rem;
+}
+.alert.alert-dark-color {
+  box-shadow: 2px 4px 6px rgb(178.5, 178.5, 178.5);
+  background-color: rgb(127.5, 127.5, 127.5);
+  border: 2px solid black;
+}
+.alert.alert-dark-color > * {
+  color: black;
+  font-size: 1.2rem;
+}
+.alert.alert-medium-color {
+  box-shadow: 2px 4px 6px rgb(237.9166666667, 217.9166666667, 197.0833333333);
+  background-color: rgb(214.6833333333, 167.4833333333, 118.3166666667);
+  border: 2px solid rgb(60.2333333333, 39.4333333333, 17.7666666667);
+}
+.alert.alert-medium-color > * {
+  color: rgb(60.2333333333, 39.4333333333, 17.7666666667);
+  font-size: 1.2rem;
+}
+.alert.alert-light-color {
+  box-shadow: 2px 4px 6px white;
+  background-color: white;
+  border: 2px solid rgb(228.4545454545, 165.4090909091, 135.5454545455);
+}
+.alert.alert-light-color > * {
+  color: rgb(228.4545454545, 165.4090909091, 135.5454545455);
+  font-size: 1.2rem;
+}
+
+.hide {
+  display: none;
+}
+
+/*# sourceMappingURL=alert.css.map */

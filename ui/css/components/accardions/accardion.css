@@ -1,0 +1,45 @@
+/** darker mode of color = 10% */
+/** darkest mode of color = 20% */
+/** ligter mode of color = 20% */
+/** ligtest mode of color = 80% */
+.accardion {
+  border: 2px solid #6f2c91;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.accardion-item {
+  border-bottom: 1.5px solid #6f2c91;
+  background-color: rgb(227.7619047619, 204.3650793651, 239.6349206349);
+}
+.accardion-item:last-child {
+  border-bottom: none;
+}
+.accardion-header {
+  background-color: rgb(227.7619047619, 204.3650793651, 239.6349206349);
+  color: #333333;
+  padding: 1rem;
+  text-align: right;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+.accardion-header:hover {
+  background-color: rgb(81.0476190476, 32.126984127, 105.873015873);
+  color: rgb(248.8095238095, 243.4920634921, 251.5079365079);
+}
+.accardion-content {
+  display: none;
+  padding: 1rem;
+  background-color: rgb(248.8095238095, 243.4920634921, 251.5079365079);
+  font-size: 0.9rem;
+  text-align: right;
+}
+.accardion-content.active {
+  display: block;
+}
+
+/*# sourceMappingURL=accardion.css.map */

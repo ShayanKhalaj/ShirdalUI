@@ -1,0 +1,94 @@
+@import "../../layout/colors/colors";
+@import "./table-variables";
+@import "../../layout/grid/grid-variables";
+
+.table {
+  // basic styles
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid $dark-color;
+  color: $dark-color;
+  font-size: 1rem;
+  margin: 0 auto;
+
+  // width
+  $table-width-keys: map-keys($table-width-map);
+  @each $table-width-key in $table-width-keys {
+    $width: map-get($table-width-map, $table-width-key);
+    &.table-#{$table-width-key} {
+      width: $width !important;
+    }
+  }
+
+  // height
+  $table-height-keys: map-keys($table-height-map);
+  @each $table-height-key in $table-height-keys {
+    $height: map-get($table-height-map, $table-height-key);
+    &.table-#{$table-height-key} {
+      height: $height !important;
+      font-size: $height * 1 !important;
+      padding: $height * 1.5 !important;
+      font-weight: 300 !important;
+    }
+  }
+
+  //text aligns
+  $table-aligns-keys: map-keys($table-alings-map);
+  @each $table-align-key in $table-aligns-keys {
+    $align: map-get($table-alings-map, $table-align-key);
+    &.table-#{$table-align-key} {
+      text-align: $align !important;
+    }
+  }
+
+  // table color scale
+  $colors-map-keys: map-keys($colors-map);
+  @each $color-key in $colors-map-keys {
+    $color: map-get($colors-map, $color-key);
+    &.table-#{$color-key} {
+      border: 1px solid $color;
+      font-weight: bold;
+      th {
+        background-color: $color !important;
+        border: 1px solid $color;
+        @if (lightness($color) < 50%) {
+          color: lighten($color, 80%) !important;
+        } @else {
+          color: darken($color, 80%) !important;
+        }
+      }
+      td {
+        border: 1px solid $color;
+      }
+    }
+    &.table-striped-#{$color-key} {
+      & > tbody > tr:nth-child(even) {
+        background-color: lighten($color, 40%) !important;
+        color: darken($color, 80%) !important;
+      }
+      & > tbody > tr:nth-child(odd) {
+        background-color: lighten($color, 50%) !important;
+        color: darken($color, 80%) !important;
+      }
+    }
+    &.table-hover-#{$color-key} > tbody > tr:hover {
+      background-color: darken($color, 10%) !important;
+      color: lighten($color, 80%) !important;
+    }
+  }
+
+  // table responsive
+  @each $responsive-size in $bp-xxl, $bp-xl, $bp-lg, $bp-md, $bp-sm, $bp-xs,
+    $bp-xxs
+  {
+    @media (max-width: $responsive-size) {
+      width: 100%;
+      overflow-x: auto;
+      th,
+      td {
+        padding-right: 1rem;
+        padding-left: 1rem;
+      }
+    }
+  }
+}

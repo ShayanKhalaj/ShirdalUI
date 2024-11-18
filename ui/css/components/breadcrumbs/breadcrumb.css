@@ -1,0 +1,48 @@
+/** darker mode of color = 10% */
+/** darkest mode of color = 20% */
+/** ligter mode of color = 20% */
+/** ligtest mode of color = 80% */
+.breadcrumb {
+  padding: 1rem;
+  font-size: 1rem;
+  color: #f3c94c !important;
+  background-color: rgb(248.8095238095, 243.4920634921, 251.5079365079);
+  height: 4vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.breadcrumb-list {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+.breadcrumb-item:not(:last-child)::after {
+  content: ">";
+  margin: 0 0.5rem;
+  color: #f3c94c;
+}
+.breadcrumb-link {
+  text-decoration: none;
+  color: #f3c94c;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+  padding: 1rem;
+  border-top-right-radius: 4rem;
+  border-bottom-right-radius: 4rem;
+}
+.breadcrumb-link:hover {
+  color: rgb(239.7958115183, 186.5811518325, 28.2041884817);
+}
+.breadcrumb-current {
+  font-size: 1.2;
+  font-weight: 700;
+  color: rgb(164.619047619, 86.9841269841, 204.0158730159);
+  transition: color 0.3s;
+}
+.breadcrumb-current:hover {
+  color: #6f2c91;
+}
+
+/*# sourceMappingURL=breadcrumb.css.map */

@@ -1,0 +1,49 @@
+/** darker mode of color = 10% */
+/** darkest mode of color = 20% */
+/** ligter mode of color = 20% */
+/** ligtest mode of color = 80% */
+.modal-overlay {
+  display: none;
+  flex-direction: column;
+  background-color: none;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.modal-overlay.active {
+  display: flex;
+  opacity: 1;
+}
+.modal-overlay .modal {
+  width: 60%;
+  height: auto;
+  background-color: #cccccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.modal-overlay .modal button {
+  cursor: pointer;
+}
+.modal-overlay .modal-close {
+  border: none;
+  background-color: #cccccc;
+  color: #c72c41;
+  font-size: 1rem;
+  position: absolute;
+  left: 0.5rem;
+  top: 0.5rem;
+}
+.modal-overlay .modal-body {
+  padding: 4rem;
+}
+
+/*# sourceMappingURL=modals.css.map */

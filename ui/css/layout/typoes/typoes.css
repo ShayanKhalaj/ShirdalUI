@@ -1,0 +1,142 @@
+/** darker mode of color = 10% */
+/** darkest mode of color = 20% */
+/** ligter mode of color = 20% */
+/** ligtest mode of color = 80% */
+.text, .text-ident-five, .text-ident-four, .text-ident-three, .text-ident-two, .text-ident-one, .text-decoration-wavy, .text-decoration-underline, .text-decoration-overline, .text-decoration-line-through, .text-decoration-double, .text-decoration-dotted, .text-decoration-dashed, .text-align-center, .text-align-right, .text-align-left, .text-xl, .text-lg, .text-md, .text-sm, .text-xs, .text-oblique, .text-bold, .text-italic, .text-light-color, .text-medium-color, .text-dark-color, .text-error-color, .text-warning-color, .text-success-color, .text-info-color, .text-accent-color, .text-support-color, .text-brand-color {
+  font-size: 14px;
+  color: #333333;
+}
+
+.text-brand-color {
+  color: #6f2c91 !important;
+}
+
+.text-support-color {
+  color: #f3c94c !important;
+}
+
+.text-accent-color {
+  color: #4d9b31 !important;
+}
+
+.text-info-color {
+  color: #1c3f94 !important;
+}
+
+.text-success-color {
+  color: #009b77 !important;
+}
+
+.text-warning-color {
+  color: #d76d25 !important;
+}
+
+.text-error-color {
+  color: #c72c41 !important;
+}
+
+.text-dark-color {
+  color: #333333 !important;
+}
+
+.text-medium-color {
+  color: #8b5b29 !important;
+}
+
+.text-light-color {
+  color: #f7e4db !important;
+}
+
+.text-italic {
+  font-style: italic !important;
+}
+
+.text-bold {
+  font-style: bold !important;
+}
+
+.text-oblique {
+  font-style: oblique !important;
+}
+
+.text-xs {
+  font-size: 0.5rem !important;
+}
+
+.text-sm {
+  font-size: 0.75rem !important;
+}
+
+.text-md {
+  font-size: 1rem !important;
+}
+
+.text-lg {
+  font-size: 1.25rem !important;
+}
+
+.text-xl {
+  font-size: 1.5rem !important;
+}
+
+.text-align-left {
+  text-align: left !important;
+}
+
+.text-align-right {
+  text-align: right !important;
+}
+
+.text-align-center {
+  text-align: center !important;
+}
+
+.text-decoration-dashed {
+  text-decoration: dashed !important;
+}
+
+.text-decoration-dotted {
+  text-decoration: dotted !important;
+}
+
+.text-decoration-double {
+  text-decoration: double !important;
+}
+
+.text-decoration-line-through {
+  text-decoration: line-through !important;
+}
+
+.text-decoration-overline {
+  text-decoration: overline !important;
+}
+
+.text-decoration-underline {
+  text-decoration: underline !important;
+}
+
+.text-decoration-wavy {
+  text-decoration: wavy !important;
+}
+
+.text-ident-one {
+  text-indent: 10% !important;
+}
+
+.text-ident-two {
+  text-indent: 20% !important;
+}
+
+.text-ident-three {
+  text-indent: 30% !important;
+}
+
+.text-ident-four {
+  text-indent: 40% !important;
+}
+
+.text-ident-five {
+  text-indent: 50% !important;
+}
+
+/*# sourceMappingURL=typoes.css.map */

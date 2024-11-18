@@ -1,0 +1,69 @@
+@mixin make-default-button($value) {
+  background-color: $value;
+  @if (lightness($value) < 50%) {
+    color: lighten($value, 80%);
+  } @else {
+    color: darken($value, 80%);
+  }
+}
+
+@mixin make-default-outline-button($value) {
+  background-color: lighten($value, 60%);
+  @if (lightness($value) < 50%) {
+    color: $value;
+  } @else {
+    color: darken($value, 10%);
+  }
+}
+
+@function get-button-padding($scale){
+  $base-padding-x:4px;
+  $base-padding-y:8px;
+  $padding-x:$base-padding-x + ($scale*4px);
+  $padding-y:$base-padding-y + ($scale*2px);
+  @return #{$padding-x} #{$padding-y};
+  // padding : 8px 10px 
+};
+
+@function get-button-dimensions($scale){
+  $base-width:80px;
+  $base-height:32px;
+  $width:$base-width + ($scale*16px);
+  $height:$base-height + ($scale*8px);
+  $map:(
+    width:$width,
+    height:$height
+  );
+  @return $map 
+};
+
+@function get-button-font-size($scale){
+  $base-font-size:12px;
+  $font-size:$base-font-size+($scale*2px);
+  @return $font-size
+};
+
+@mixin get-button-sizes($scale){
+  $dimensions: get-button-dimensions($scale);
+  width: map-get($dimensions, width) !important;
+  height: map-get($dimensions, height ) !important;
+  padding: get-button-padding($scale) !important;
+  font-size: get-button-font-size($scale) !important;
+};
+
+$button-scale-map:(
+  xxs:0,
+  xs:1,
+  sm:2,
+  md:3,
+  lg:4,
+  xl:5,
+  xxl:6
+)
+
+
+
+
+
+
+

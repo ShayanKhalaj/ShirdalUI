@@ -1,0 +1,128 @@
+/** darker mode of color = 10% */
+/** darkest mode of color = 20% */
+/** ligter mode of color = 20% */
+/** ligtest mode of color = 80% */
+.checkbox {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.checkbox input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.checkbox span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f7e4db;
+  border: #333333;
+  border-radius: 0;
+}
+.checkbox span::after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 2px;
+  width: 6px;
+  height: 12px;
+  border: solid #f7e4db;
+  border-width: 0 2px 2px 0;
+  transform: scale(0) rotate(45deg);
+  transition: transform 1s;
+}
+.checkbox input:checked + span {
+  background-color: #333333;
+}
+.checkbox input:checked + span::after {
+  transform: scale(1) rotate(45deg);
+}
+
+.radio-button {
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 100px;
+}
+.radio-button input[type=radio] {
+  display: none;
+}
+.radio-button input[type=radio] + label {
+  position: relative;
+  padding-left: 2rem;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #333333;
+}
+.radio-button input[type=radio] + label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 1.2rem;
+  height: 1.2rem;
+  border: 2px solid #333333;
+  border-radius: 0;
+  background-color: #f7e4db;
+  transition: all 0.3s;
+  transform: translateY(-50%);
+}
+.radio-button input[type=radio] + label::after {
+  content: "";
+  position: absolute;
+  left: 0.3rem;
+  top: 50%;
+  width: 0.8rem;
+  height: 0.8rem;
+  background-color: #333333;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+  transform: translateY(20%) scale(0);
+}
+.radio-button input[type=radio]:checked + label:after {
+  transform: translateY(-50%) scale(1);
+}
+
+.switch {
+  position: relative;
+  width: 3rem;
+  height: 1.5rem;
+}
+.switch input[type=checkbox] {
+  display: none;
+}
+.switch input[type=checkbox] + label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #333333;
+  background-color: rgb(57.75, 116.25, 36.75);
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: backgroud-color 0.3s ease;
+}
+.switch input[type=checkbox] + label:before {
+  content: "";
+  position: absolute;
+  top: 0.15rem;
+  left: 0.15rem;
+  height: 1.2rem;
+  width: 1.2rem;
+  background-color: #333333;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+.switch input[type=checkbox]:checked + label {
+  background-color: rgb(96.25, 193.75, 61.25);
+}
+.switch input[type=checkbox]:checked + label:before {
+  transform: translateX(1.5rem);
+}
+
+/*# sourceMappingURL=filters.css.map */

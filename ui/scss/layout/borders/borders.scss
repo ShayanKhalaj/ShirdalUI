@@ -1,0 +1,7 @@
+@import './border-variables';
+@import '../colors/colors';
+
+@include get-border-size(1px,10px);
+@include get-border-styles($border-styles-map);
+@include get-border-colors($colors-map);
+@include get-border-radius($border-radius-map);

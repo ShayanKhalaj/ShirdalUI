@@ -1,0 +1,68 @@
+@import "../../layout/colors/colors";
+.footer {
+  background-color: $brand-color;
+  color: $light-color;
+  height: 40vh;
+  position: static;
+  width: 100%;
+  bottom: 0;
+  overflow: scroll;
+
+  &-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 4vh;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-around;
+      text-align: left;
+    }
+  }
+
+
+  &-title {
+        bottom: 2vh;
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+    color: $light-color !important;
+  }
+
+  &-socials-list,
+  &-links-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    bottom: 1vh;
+
+
+    li {
+      margin-bottom: 1.5rem;
+      //color:$light-color ;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &-link {
+    text-decoration: none;
+    color: $light-color;
+    transition: color 0.3s;
+    a {
+      color: $light-color !important;
+      font-size: 1.2rem;
+      &:hover {
+        color: darken($light-color, 20%) !important;
+      }
+    }
+  }
+
+  &-text {
+    margin: 0.5rem 0;
+    color: $light-color;
+    font-size: 1.2rem;
+  }
+}

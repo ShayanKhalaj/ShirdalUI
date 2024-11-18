@@ -1,0 +1,120 @@
+/** darker mode of color = 10% */
+/** darkest mode of color = 20% */
+/** ligter mode of color = 20% */
+/** ligtest mode of color = 80% */
+p, pre {
+  font-size: 1rem;
+  color: #333333;
+}
+
+.p, .pre {
+  font-size: 1rem;
+  color: #333333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #333333;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  color: #333333;
+}
+
+h1 {
+  font-size: 3.25rem;
+}
+
+.h1 {
+  font-size: 3.25rem !important;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+.h2 {
+  font-size: 1.75rem !important;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+.h3 {
+  font-size: 1.25rem !important;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+.h4 {
+  font-size: 1rem !important;
+}
+
+h5 {
+  font-size: 0.85rem;
+}
+
+.h5 {
+  font-size: 0.85rem !important;
+}
+
+h6 {
+  font-size: 0.75rem;
+}
+
+.h6 {
+  font-size: 0.75rem !important;
+}
+
+b, strong, i {
+  color: #333333;
+}
+
+.b, .strong, .italic, .regular {
+  color: #333333;
+}
+
+.regular {
+  font-style: 500;
+}
+
+b, .bold {
+  font-style: 700;
+}
+
+strong, .strong {
+  font-weight: 900;
+}
+
+i, .italic {
+  font-style: italic;
+}
+
+ul, .ul, ol, .ol {
+  font-size: 1rem;
+  color: #333333;
+}
+
+ul, .ul, ol, .ol > li {
+  font-weight: 900;
+}
+
+dl, .dl {
+  font-size: 1rem;
+  color: #333333;
+}
+
+dl, .dl > dd, dt {
+  font-weight: 900;
+}
+
+a, .a {
+  font-size: 1rem;
+  color: #1c3f94;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=tags.css.map */

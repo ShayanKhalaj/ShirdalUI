@@ -1,0 +1,64 @@
+/** darker mode of color = 10% */
+/** darkest mode of color = 20% */
+/** ligter mode of color = 20% */
+/** ligtest mode of color = 80% */
+.footer {
+  background-color: #6f2c91;
+  color: #f7e4db;
+  height: 40vh;
+  position: static;
+  width: 100%;
+  bottom: 0;
+  overflow: scroll;
+}
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 4vh;
+}
+@media (min-width: 768px) {
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: left;
+  }
+}
+.footer-title {
+  bottom: 2vh;
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+  color: #f7e4db !important;
+}
+.footer-socials-list, .footer-links-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  bottom: 1vh;
+}
+.footer-socials-list li, .footer-links-list li {
+  margin-bottom: 1.5rem;
+}
+.footer-socials-list li:last-child, .footer-links-list li:last-child {
+  margin-bottom: 0;
+}
+.footer-link {
+  text-decoration: none;
+  color: #f7e4db;
+  transition: color 0.3s;
+}
+.footer-link a {
+  color: #f7e4db !important;
+  font-size: 1.2rem;
+}
+.footer-link a:hover {
+  color: rgb(228.4545454545, 165.4090909091, 135.5454545455) !important;
+}
+.footer-text {
+  margin: 0.5rem 0;
+  color: #f7e4db;
+  font-size: 1.2rem;
+}
+
+/*# sourceMappingURL=footer.css.map */

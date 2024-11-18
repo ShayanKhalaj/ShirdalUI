@@ -1,0 +1,23 @@
+/** darker mode of color = 10% */
+/** darkest mode of color = 20% */
+/** ligter mode of color = 20% */
+/** ligtest mode of color = 80% */
+.loader {
+  display: block;
+  width: 50px !important;
+  height: 50px !important;
+  border: 10px solid #6f2c91;
+  border-top: 5px solid #d76d25;
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*# sourceMappingURL=loader.css.map */

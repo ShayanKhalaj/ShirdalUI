@@ -1,0 +1,32 @@
+// css reset
+@import './vendor/css_reset.scss';
+// css styles
+@import './layout/direction/direction.scss';
+@import './layout/grid/grid.scss';
+@import './layout/borders/borders.scss';
+@import './layout/icons/icons.scss';
+@import './layout/typoes/tags.scss';
+@import './layout/typoes/typoes.scss';
+@import './components/buttons/buttons.scss';
+@import './components/tables/tables.scss';
+@import './components/forms/forms.scss';
+@import './components/cards/cards.scss';
+@import './components/navbars/navbars.scss';
+@import './components/sidebars/sidebars.scss';
+@import './components/modals/modals.scss';
+@import './components/filters/filters.scss';
+@import './components/notificatons/alert.scss';
+@import './components/notificatons/toast.scss';
+@import './components/banners/banners.scss';
+@import './components/sliders/slider.scss';
+@import './components/carousels/carousels.scss';
+@import './components/galleries/gallery.scss';
+@import './components/footers/footer.scss';
+@import './components/accardions/accardion.scss';
+@import './components/tabs/tab.scss';
+@import './components/dropdowns/dropdown.scss';
+@import './components/breadcrumbs/breadcrumb.scss';
+@import './components/loaders/loader.scss';
+@import './components/progrecces/progress.scss';
+@import './components/charts/donut.scss';
+

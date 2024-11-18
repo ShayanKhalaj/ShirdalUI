@@ -1,0 +1,25 @@
+// size > xs sm md lg xl
+$icon-size-map:(
+    xs:1rem,
+    sm:1.5rem,
+    md:2rem,
+    lg:2.5rem,
+    xl:3rem,
+);
+// color
+// border > none 2px 4px 8px rounded
+$icon-border-radius-map:(
+    none:none,
+    2px:2px,
+    4px:4px,
+    8px:8px,
+    rounded:1000px
+);
+
+// border > none 1px 2px 3px 
+$icon-border-size-map:(
+    none:none,
+    1px:1px,
+    2px:2px,
+    3px:3px,
+)

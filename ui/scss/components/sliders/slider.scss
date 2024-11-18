@@ -1,0 +1,48 @@
+
+@import '../../layout/colors/colors';
+.slider{
+    position: relative;
+    width: 100%;
+    max-width: 80vw;
+    height: 40vh;
+    overflow: hidden;
+    margin: auto;
+
+    &-slides{
+        display: flex;
+        transition:  transform .5s ease;
+    }
+
+    &-slide{
+        max-width: 100%;
+        height: 100%;
+    }
+
+    &-image{
+        width: 100vw;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &-button{
+        position: absolute;
+        top: 40%;
+        transform: translateY(-50%);
+        background-color: $dark-color;
+        opacity: .5;
+        font-size: 2rem;
+        color:$light-color;
+        border: none;
+        cursor: pointer;
+        z-index: 1;
+        &--pre{
+            left: 0;
+        }
+        &--next{
+            right: 0;
+        }
+        &:hover{
+            background-color: darken($dark-color,20%);
+        }
+    }
+}

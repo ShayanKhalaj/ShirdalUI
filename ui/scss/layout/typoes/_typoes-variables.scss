@@ -1,0 +1,22 @@
+// font-style:Italic – Bold - Oblique
+$font-styles : italic,bold,oblique;
+// font-size:xs – sm – md – lg - xl
+$font-sizes-map:(
+    xs:.5rem,
+    sm:.75rem,
+    md:1rem,
+    lg:1.25rem,
+    xl:1.5rem
+);
+// text-align:left - right - center
+$text-aligns : left,right,center;
+// text-decoration:dashed dotted double line-through overline underline wavy
+$text-decorations : dashed ,dotted ,double ,line-through ,overline, underline, wavy;
+// text-ident:10% 20% 30%
+$text-idents-map:(
+    one:10%,
+    two:20%,
+    three:30%,
+    four:40%,
+    five:50%
+);

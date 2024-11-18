@@ -1,0 +1,47 @@
+/** darker mode of color = 10% */
+/** darkest mode of color = 20% */
+/** ligter mode of color = 20% */
+/** ligtest mode of color = 80% */
+
+// brand colors
+$brand-color: #6f2c91;
+$support-color: #f3c94c;
+$accent-color: #4d9b31;
+// semantic colors
+$info-color: #1c3f94;
+$success-color: #009b77;
+$warning-color: #d76d25;
+$error-color: #c72c41;
+// neutral colors
+$dark-color: #333333;
+$medium-color: #8b5b29;
+$light-color: #f7e4db;
+
+$colors-list: (
+  $brand-color,
+  $support-color,
+  $accent-color,
+  $info-color,
+  $success-color,
+  $warning-color,
+  $error-color,
+  $dark-color,
+  $medium-color,
+  $light-color
+);
+
+$colors-map : (
+    brand-color: $brand-color,
+    support-color: $support-color,
+    accent-color: $accent-color,
+    info-color: $info-color,
+    success-color: $success-color,
+    warning-color: $warning-color,
+    error-color: $error-color,
+    dark-color: $dark-color,
+    medium-color: $medium-color,
+    light-color: $light-color,
+);
+
+
+

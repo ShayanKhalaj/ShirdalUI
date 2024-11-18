@@ -1,0 +1,99 @@
+/** darker mode of color = 10% */
+/** darkest mode of color = 20% */
+/** ligter mode of color = 20% */
+/** ligtest mode of color = 80% */
+.navbar {
+  width: 100%;
+  height: 3rem;
+  background-color: #333333;
+  color: #f7e4db;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.navbar-fixed {
+  position: fixed;
+}
+@media (max-width: 768px) {
+  .navbar {
+    justify-content: space-between;
+  }
+}
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+@media (max-width: 768px) {
+  .navbar-logo {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+.navbar-menu {
+  display: flex;
+  list-style: none;
+}
+.navbar-menu .navbar-item {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+.navbar-menu .navbar-item a {
+  text-decoration: none;
+}
+.navbar-menu .navbar-item a:hover {
+  color: rgb(237.7272727273, 196.7045454545, 177.2727272727) !important;
+}
+.navbar-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  background-color: #333333;
+  border: none;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+.navbar-toggle span {
+  display: block;
+  width: 24px;
+  height: 1px;
+  background-color: #f7e4db;
+  margin: 4px 0;
+  transition: 0.3s;
+}
+@media (max-width: 768px) {
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 45px;
+    background-color: #333333;
+    width: 100%;
+    border-top: 1px solid #f7e4db;
+    padding: 1rem;
+  }
+  .navbar-menu .navbar-item {
+    margin: 1rem 0;
+    text-align: center;
+  }
+  .navbar-toggle {
+    display: flex;
+  }
+  .navbar.is-active .navbar-menu {
+    display: flex;
+  }
+  .navbar.is-active .navbar-toggle span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    width: 28px;
+    height: 2px;
+  }
+  .navbar.is-active .navbar-toggle span:nth-child(2) {
+    opacity: 0;
+  }
+  .navbar.is-active .navbar-toggle span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -10px);
+    width: 28px;
+    height: 2px;
+  }
+}
+
+/*# sourceMappingURL=navbars.css.map */

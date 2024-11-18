@@ -1,0 +1,58 @@
+@import '../../layout/colors/colors';
+.carousel{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 90vw;
+    overflow: hidden;
+    background-color: $brand-color;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    &-track-container{
+        overflow: hidden;
+        width: 100%;
+    }
+
+    &-track{
+        display: flex;
+        width: max-content;
+        cursor: grab;
+        transition: transform .5s ease;
+    }
+
+    &-slide{
+        width: 15vw;
+        height: 20vh;
+        margin: 0 10px;
+        padding: 20px;
+        background-color: $support-color;
+        border-radius: .5rem;
+        text-align: center;
+        box-shadow: 0 4px 10px rgba(33, 33, 33, 0.204);
+        transition: transform .3s;
+    }
+
+    &-button{
+        background-color: rgba(58, 58, 58, 0.567);
+        color: darken($light-color,10%);
+        border: none;
+        font-size: 2rem;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        z-index: 1;
+        padding: 5px 15px;
+        border-radius: 50%;
+        transform: translateX(-50%);
+
+        &--left{
+            left: 3rem;
+        }
+        &--right{
+            right: 1rem;
+        }
+    }
+
+}
